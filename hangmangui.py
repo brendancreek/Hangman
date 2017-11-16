@@ -1,8 +1,3 @@
-#James Lin
-#jl3782@columbia.edu
-#hangmangui.py
-#hangman game using a GUI
-
 from Tkinter import *
 import tkMessageBox
 from array import *
@@ -156,15 +151,15 @@ def startgame(e, top):
 
 ## quit the game ##
 def quitnow():
-	tkMessageBox.showinfo("Hangman in Python, by jl", "Thanks for playing! See you soon!")
+	tkMessageBox.showinfo("Hangman in Python, © Brendan Creek Programming 2017", "Thanks for playing! Enjoy the rest of your Code Day!")
 	exit()
 
 def win(game, word):
-	tkMessageBox.showinfo("Winnerx2-Chicken-Dinner", "You WIN! The word was " + word + "!")
+	tkMessageBox.showinfo("WINNER! :)", "You WIN! The word was " + word + "!")
 	game.withdraw()
 
 def lose(game, word):
-	tkMessageBox.showinfo("Loser-Shmooser", "You LOSE! The word was " + word + "!")
+	tkMessageBox.showinfo("LOSER :(", "You LOSE! The word was " + word + "!")
 	game.withdraw()
 
 def showhangman(gamelabel1, remainingguesses):
@@ -201,7 +196,7 @@ def showhangman(gamelabel1, remainingguesses):
 def playnow():
 
 	top = Toplevel()
-	top.wm_title("Game Lobby")
+	top.wm_title("Hangman")
 	top.minsize(200,100)
 	top.geometry("300x80")
 
@@ -218,7 +213,7 @@ def playnow():
 	top.mainloop()
 
 root = Tk()
-root.wm_title("Hangman in Python, by jl")
+root.wm_title("Hangman in Python, Holm Code Day 2017 | © Brendan Creek Programming 2017")
 root.minsize(380,380)
 root.geometry("300x100")
 
