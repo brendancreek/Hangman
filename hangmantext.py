@@ -1,8 +1,3 @@
-#James Lin
-#jl3782@columbia.edu
-#hangmantext.py
-#hangman game using commandline text
-
 import time
 from array import *
 
@@ -120,7 +115,7 @@ menu = True
 
 while menu:
 		print "\n---------------------------------"
-		print "WELCOME TO PYTHON WORD GUESSER!!!"
+		print "   WELCOME TO PYTHON HANGMAN!!!   "
 		print "---------------------------------\n"
 	
 
